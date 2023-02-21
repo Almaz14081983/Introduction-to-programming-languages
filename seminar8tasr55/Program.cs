@@ -30,7 +30,7 @@ int[,] GetArray(int m, int n, int min, int max)
     return result;
 }
 
-void ArithmMean(int[,] matrix)
+void RowsToColumns(int[,] matrix)
 {
     int m = rows;
     int n = columens;
@@ -69,6 +69,6 @@ void PrintArray(int[,] matrix)
 
 int[,] array = GetArray( rows, columens, min, max);
 PrintArray(array);
-ArithmMean(array);
+RowsToColumns(array);
 Console.WriteLine();
 if (rows==columens) PrintArray(array);
