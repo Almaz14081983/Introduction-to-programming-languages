@@ -2,11 +2,13 @@
 // двумерного массива. Частотный словарь содержит
 // информацию о том, сколько раз встречается элемент
 // входных данных.
-//{ 1, 9, 9, 0, 2, 8, 0, 9 } 0 встречается 2 раза
+//{ 1, 9, 9, 0, 2, 8, 0, 9 } 
+//0 встречается 2 раза
 //1 встречается 1 раз
 //2 встречается 1 раз
 //8 встречается 1 раз
 //9 встречается 3 раза
+
 //1, 2, 3
 //4, 6, 1
 //2, 1, 6
@@ -18,18 +20,12 @@
 
 Console.Clear();  
 Console.Write("Введите количество строк массива: ");
-int rows = int.Parse(Console.ReadLine());
+int rows = int.Parse(Console.ReadLine()!);
 
 Console.Write("Введите количество столбцов массива: "); 
-int columns = int.Parse(Console.ReadLine()); 
+int columns = int.Parse(Console.ReadLine()!); 
 
-int[,] array = GetArray(rows, columns, -10, 10); 
-PrintArray(array); 
-Console.WriteLine(); 
-int[] rowAr = GetRowArray(array); 
-SortArray(rowAr); 
-Console.WriteLine(String.Join(" ", rowAr)); 
-PrintData(rowAr); 
+
 
 int[,] GetArray(int m, int n, int min, int max) 
 { 
@@ -105,4 +101,12 @@ void PrintData(int[] inArray)
     } 
     Console.WriteLine($"{el} встречается {count}"); 
 }
+
+int[,] array = GetArray(rows, columns, -10, 10); 
+PrintArray(array); 
+Console.WriteLine(); 
+int[] rowAr = GetRowArray(array); 
+SortArray(rowAr); 
+Console.WriteLine(String.Join(" ", rowAr)); 
+PrintData(rowAr); 
 
