@@ -38,25 +38,25 @@ void GetArray(int[,] someArray)
      } 
 }
 
-int[,] martrixA = new int[rows, rowscol];
+int[,] matrixA = new int[rows, rowscol];
 
-int[,] martrixB = new int[rowscol, columns];
+int[,] matrixB = new int[rowscol, columns];
 
-int[,] martrixC = new int[rows, columns];
+int[,] matrixC = new int[rows, columns];
 
 
-void MatrixProduct(int[,] martrixA, int[,] martrixB, int[,] martrixC)
+void MatrixProduct(int[,] matrixA, int[,] matrixB, int[,] matrixC)
 {
-    for (int i = 0; i < martrixC.GetLength(0); i++)
+    for (int i = 0; i < matrixC.GetLength(0); i++)
     {
-        for (int j = 0; j < martrixC.GetLength(1); j++)
+        for (int j = 0; j < matrixC.GetLength(1); j++)
         {
             int sum = 0;
-            for (int n = 0; n < martrixA.GetLength(1); n++)
+            for (int n = 0; n < matrixA.GetLength(1); n++)
             {
-                sum = sum + (martrixA[i,n] * martrixB[n,j]);
+                sum = sum + (matrixA[i,n] * matrixB[n,j]);
             }
-            martrixC[i,j] = sum;
+            matrixC[i,j] = sum;
         }
     }
 }
@@ -73,12 +73,12 @@ void PrintArray(int[,] inArray)
     } 
 } 
 
-GetArray(martrixA);
-PrintArray(martrixA);
-GetArray(martrixB);
+GetArray(matrixA);
+PrintArray(matrixA);
+GetArray(matrixB);
 Console.WriteLine();
-PrintArray(martrixB);
-MatrixProduct(martrixA, martrixB, martrixC);
+PrintArray(matrixB);
+MatrixProduct(matrixA, matrixB, matrixC);
 Console.WriteLine(); 
 Console.WriteLine($"Произведение двух матриц:");
-PrintArray(martrixC);
+PrintArray(matrixC);
