@@ -52,9 +52,9 @@ void MatrixProduct(int[,] martrixA, int[,] martrixB, int[,] martrixC)
         for (int j = 0; j < martrixC.GetLength(1); j++)
         {
             int sum = 0;
-            for (int k = 0; k < martrixA.GetLength(1); k++)
+            for (int n = 0; n < martrixA.GetLength(1); n++)
             {
-                sum = sum + (martrixA[i,k] * martrixB[k,j]);
+                sum = sum + (martrixA[i,n] * martrixB[n,j]);
             }
             martrixC[i,j] = sum;
         }
@@ -79,5 +79,6 @@ GetArray(martrixB);
 Console.WriteLine();
 PrintArray(martrixB);
 MatrixProduct(martrixA, martrixB, martrixC);
+Console.WriteLine(); 
 Console.WriteLine($"Произведение двух матриц:");
 PrintArray(martrixC);
