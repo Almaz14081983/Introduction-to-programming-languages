@@ -33,16 +33,6 @@ void GetArray(int[,] someArray)
      } 
 }
 
-//int SumRows(int[,] matrix, int i)
-//{
-//    int sum = matrix[i,0];
-//    for(int j = 1; j < matrix.GetLength(1); j ++)
-//    {    
-//        sum = sum + matrix[i,j];                   
-//    }     
-//    return sum; 
-//}
-
 void SumMin(int[,] matrix)
 {
     int row = 0; 
