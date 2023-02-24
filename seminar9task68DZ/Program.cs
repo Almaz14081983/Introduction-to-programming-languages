@@ -5,10 +5,10 @@
  
 Console.Clear(); 
 Console.Write("Введите число m: ");
-int numberM = Convert.ToInt32(Console.ReadLine());
+int numberM = int.Parse(Console.ReadLine()!);
 
 Console.Write("Введите число n: ");
-int numberN = Convert.ToInt32(Console.ReadLine());
+int numberN = int.Parse(Console.ReadLine()!);
 
 int FunctionAkkerman(int numM, int numN)
 {
