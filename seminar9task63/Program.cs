@@ -13,7 +13,8 @@ void NaturalNumbers(int n, int start = 1)
     if (start <= n)
     {
         Console.Write($"{start}");
-        if (start != n) Console.Write(", "); else Console.WriteLine(".");
+        if (start != n) Console.Write(", "); 
+        else Console.WriteLine(".");
         NaturalNumbers(n, start + 1);
     }
 }
