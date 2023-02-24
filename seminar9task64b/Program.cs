@@ -5,7 +5,7 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
-
+Console.Clear(); 
 Console.Write("Введите N: ");
 int numbersN = int.Parse(Console.ReadLine()!)!;
 
@@ -14,18 +14,14 @@ int numbersN = int.Parse(Console.ReadLine()!)!;
 void  NaturalNumbersDescending(int num)
 {
     Console.Write($"{num}, ");
-    
-//    Console.Write($" n");
     if (num == 1)
     {
         return;
     }
-    else // Console.WriteLine(".");
+    else 
     {
         NaturalNumbersDescending(num - 1);
     }
-    
- //   Console.Write($" {n}, ");
 }
 
 
