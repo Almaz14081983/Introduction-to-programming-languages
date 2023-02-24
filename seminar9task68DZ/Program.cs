@@ -16,7 +16,7 @@ int FunctionAkkerman(int numM, int numN)
     {
         return numN + 1;
     }
-    else if (numN == 0 && numM > 0)
+    if (numN == 0 && numM > 0)
     {
         return FunctionAkkerman(numM - 1, 1);
     }
