@@ -13,7 +13,8 @@ int numbersN = int.Parse(Console.ReadLine()!)!;
 
 void  NaturalNumbersDescending(int num)
 {
-    Console.Write($" {num} ");
+    Console.Write($"{num}, ");
+    
 //    Console.Write($" n");
     if (num == 1)
     {
@@ -23,6 +24,7 @@ void  NaturalNumbersDescending(int num)
     {
         NaturalNumbersDescending(num - 1);
     }
+    
  //   Console.Write($" {n}, ");
 }
 
