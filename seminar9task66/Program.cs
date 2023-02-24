@@ -16,7 +16,7 @@ SumFromMToN(m, n);
 // вызов функции "сумма чисел от M до N"
 void SumFromMToN(int m, int n)
 {
-    Console.Write(SumMN(m - 1, n));
+    Console.Write($"Сумма цифр = {SumMN(m - 1, n)}");
 }
 
 // функция сумма чисел от M до N
