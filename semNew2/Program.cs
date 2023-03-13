@@ -1,24 +1,22 @@
 ﻿
+Console.Clear();
 
-
-string[] array1 = new string[5] {"13.", "03", "при", "вет", "пока"};
-string[] array2 = new string[array1.Length];
-
+string[] existingArray = new string[9] {"14", ".", "03", ".", "23", "при", "-", "вет", "пока"};
+string[] newArray = new string[existingArray.Length];
 
 int count = 0;
-for (int i = 0; i < array1.Length; i++)
+for (int i = 0; i < existingArray.Length; i++)
 {
-if(array1[i].Length <= 3)
+if(existingArray[i].Length <= 3)
     {
-    array2[count] = array1[i];
+    newArray[count] = existingArray[i];
     count++;
     }
 }
 
-
-for (int i = 0; i < array2.Length; i++)
+for (int i = 0; i < newArray.Length; i++)
 {
-    Console.Write($"{array2[i]} ");
+    Console.Write($"{newArray[i]} ");
 }
 
 
